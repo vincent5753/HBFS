@@ -1,0 +1,1 @@
+0 * * * * osascript -e "display notification \"$(df -h | grep /dev/disk3s1s1 | awk -F ' ' '{print $4}')\" with title \"剩餘儲存空間\" subtitle \"Made by VP\" sound name \"Frog\""
