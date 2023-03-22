@@ -1,0 +1,2 @@
+folders_to_be_exclude_here
+這裡放不想被壓縮的資料夾
