@@ -8,3 +8,4 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 ## Mac
 
 ## Win
+### compress
