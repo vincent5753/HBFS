@@ -11,3 +11,5 @@ rem 工作列顏色跟著變 / Colorized Taskbar without colorized Start Menu an
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" /v "ColorPrevalence" /t reg_DWORD /d "1" /f
 rem 工作列時鐘顯示秒數 / Show Seconds In Taskbar SystemClock
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowSecondsInSystemClock" /t reg_DWORD /d "1" /f
+rem 透明ㄉ工作列 / Transparent Taskbar
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "UseOLEDTaskbarTransparency" /t reg_DWORD /d "1" /f
