@@ -16,3 +16,5 @@ rem 透明ㄉ工作列 / Transparent Taskbar
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "UseOLEDTaskbarTransparency" /t reg_DWORD /d "1" /f
 rem 總是從記憶體中解除安裝無用的動態連結(DLL) / Always Unload Dll From Memory
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\explorer" /v "AlwaysUnloadDll" /t reg_DWORD /d "1" /f
+rem 開機延遲啟動項 / Startup Delay
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize" /v "StartupDelayInMSec" /t reg_DWORD /d "0" /f
