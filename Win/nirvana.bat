@@ -18,3 +18,5 @@ rem 總是從記憶體中解除安裝無用的動態連結(DLL) / Always Unload 
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\explorer" /v "AlwaysUnloadDll" /t reg_DWORD /d "1" /f
 rem 開機延遲啟動項 / Startup Delay
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize" /v "StartupDelayInMSec" /t reg_DWORD /d "0" /f
+rem 去掉工作列上煩人的更新圖示 / Disable Windows Update Icon on Taskbar
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "TrayIconVisibility" /t reg_DWORD /d "0" /f
