@@ -1,3 +1,3 @@
 alias cls='clear'
-alias mkcd='function _mkcd(){ mkdir -p $1; cd $1; };_mkcd'
+mkcd(){ mkdir -p "$1" && cd "$1" ;}
 dockeroot() { docker exec -it -u root "$1" bash ;}
