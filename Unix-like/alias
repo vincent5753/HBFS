@@ -1,4 +1,5 @@
 alias cls='clear'
 mkcd(){ mkdir -p "$1" && cd "$1" ;}
 rmf(){ rm -rf "$1" }
+complete -A directory rmf
 dockeroot() { docker exec -it -u root "$1" bash ;}
