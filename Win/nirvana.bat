@@ -25,3 +25,4 @@ reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableNotificat
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableSearchBoxSuggestions" /t reg_DWORD /d "1" /f
 rem 我才不想被人知道我找了哪些東西 / Disable Windows Explorer Search History(Top Right Corner)
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableSearchHistory" /t reg_DWORD /d "1" /f
+reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableSearchBoxSuggestions" /t reg_DWORD /d "1" /f
