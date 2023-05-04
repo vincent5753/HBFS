@@ -26,3 +26,7 @@ reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableSearchBox
 rem 我才不想被人知道我找了哪些東西 / Disable Windows Explorer Search History(Top Right Corner)
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableSearchHistory" /t reg_DWORD /d "1" /f
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableSearchBoxSuggestions" /t reg_DWORD /d "1" /f
+rem 關掉時間軸 / Disable Timeline
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "EnableActivityFeed" /t REG_DWORD /d "0" /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "PublishUserActivities" /t REG_DWORD /d "0" /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "UploadUserActivities" /t REG_DWORD /d "0" /f
