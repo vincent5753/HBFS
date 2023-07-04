@@ -10,6 +10,9 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 `*.scpt` 為 MacOS 限定腳本 </br>
 `crontab.txt` 為僅限 MacOS 能執行的 crontab
 
+## Linux
+### Ubuntu
+
 ## Win
 ### compress
 如果時間對你不是問題，而且你需要(想要)好的壓縮比，為何不試試無腦壓壓看不同的字典大小？
