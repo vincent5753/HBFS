@@ -7,6 +7,8 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 原則上會是 Linux 和 MacOS 共通的調整
 
 ## Mac
+`*.scpt` 為 MacOS 限定腳本 </br>
+`crontab.txt` 為僅限 MacOS 能執行的 crontab
 
 ## Win
 ### compress
