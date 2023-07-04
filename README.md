@@ -17,6 +17,9 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 ## Android
 ### 每日.tsk.xml
 我拿來自動跑每日簽到的 Tasker 腳本
+>注意，因為不是每個 APP 都能使用元件進行定位 </br>
+>在一些特定 APP 中，你可能會需要根據自己手機解析度來更改腳本中絕對位置的座標
+
 目前支援的 APP 如下
 + 中友百貨
 + 巴哈母特
