@@ -17,3 +17,13 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 ## Android
 ### 每日.tsk.xml
 我拿來自動跑每日簽到的 Tasker 腳本
+目前支援的 APP 如下
++ 中友百貨
++ 巴哈母特
++ 蝦皮購物
++ Mo PTT
++ 4Gamers
++ 麥當勞
++ YAMAHA LIFE
++ 飛貓盤
++ HoYoLAB
