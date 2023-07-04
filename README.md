@@ -9,6 +9,8 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 
 ## Win
 ### compress
+如果時間對你不是問題，而且你需要(想要)好的壓縮比，為何不試試無腦壓壓看不同的字典大小？
 
 ## Android
 ### 每日.tsk.xml
+我拿來自動跑每日簽到的 Tasker 腳本
