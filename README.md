@@ -14,6 +14,9 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 ### compress
 如果時間對你不是問題，而且你需要(想要)好的壓縮比，為何不試試無腦壓壓看不同的字典大小？
 
+### nirvana.bat
+我的環境調整腳本，原則上灌系統才會需要它
+
 ### 其他批次檔
 `flac8.bat` 快速將當前目錄下的 `wav` 轉為 `flac`，使用最高壓縮比(-8) </br>
 >請確保你可以使用 `flac` 指令(記得把它加到環境變數中)
