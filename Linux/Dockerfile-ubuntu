@@ -1,0 +1,8 @@
+FROM ubuntu:20.04
+MAINTAINER VP s1811132018@nutc.edu.tw
+
+ENV EDITOR="nano"
+RUN apt-get update
+RUN apt-get install -y dnsutils iputils-ping gawk curl wget net-tools iperf3 jq
+
+RUN bash
