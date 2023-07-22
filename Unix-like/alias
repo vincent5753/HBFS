@@ -1,5 +1,8 @@
 #!/bin/bash
+
 alias cls='clear'
 alias ll='ls -lh'
 alias l='ls -l'
 alias k='kubectl'
+alias ping8="ping 8.8.8.8"
+alias pingg="ping google.com"
