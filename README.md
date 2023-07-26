@@ -18,7 +18,7 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 如果時間對你不是問題，而且你需要(想要)好的壓縮比，為何不試試無腦壓壓看不同的字典大小？
 
 TDL
-+ 自動刪除多於壓縮檔
++ 自動刪除多餘壓縮檔
 
 ### nirvana.bat
 我的環境調整腳本，原則上灌系統才會需要它
