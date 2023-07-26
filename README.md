@@ -44,3 +44,11 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 + YAMAHA LIFE
 + 飛貓盤
 + HoYoLAB
++ aifian
+
+已知問題 or 您可能需要留意
++ 麥當當偶爾會改套件名
++ 在網路速度不夠快時，預設的等待時間可能會逾時
+
+TDL
++ 針對比較常出問題的 APP 調整執行順序
