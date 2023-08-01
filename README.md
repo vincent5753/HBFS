@@ -23,6 +23,12 @@ TDL
 ### nirvana.bat
 我的環境調整腳本，原則上灌系統才會需要它
 
+### VP's Daemon.bat
+為當前使用者設置開機啟動
+```
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "VP's Daemon.bat" /t REG_SZ /F /D "C:\ENV\VP's Daemon.bat"
+```
+
 ### 其他批次檔
 `flac8.bat` 快速將當前目錄下的 `wav` 轉為 `flac`，使用最高壓縮比(-8) </br>
 >請確保你可以使用 `flac` 指令(記得把它加到環境變數中)
