@@ -24,6 +24,8 @@ TDL
 我的環境調整腳本，原則上灌系統才會需要它
 
 ### VP's Daemon.bat
+開機就會幫我卡著的開機守護神 :)
+
 為當前使用者設置開機啟動
 ```
 REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "VP's Daemon.bat" /t REG_SZ /F /D "C:\ENV\VP's Daemon.bat"
