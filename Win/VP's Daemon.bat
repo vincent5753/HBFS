@@ -1,18 +1,18 @@
 @echo off
-@title VPªº¶}¾÷¦uÅ@¯«
+@title VPçš„é–‹æ©Ÿå®ˆè­·ç¥
 
-echo "¶Ù¡A³o¬OVPªº¶}¾÷¦uÅ@¯«"
+echo "å—¨ï¼Œé€™æ˜¯VPçš„é–‹æ©Ÿå®ˆè­·ç¥"
 
-:: ¦Ñµ§¹q¤ñ¸ûºC¡A¥ıµ¥¥¦°_§É 
-timeout 3 > NUL
+:: è€ç­†é›»æ¯”è¼ƒæ…¢ï¼Œå…ˆç­‰å®ƒèµ·åºŠ 
+timeout 15 > NUL
 
 if exist A:\ (
-    echo "¼Ú­C¡A§Ú¦³ RAMDISK ¡I"
+    echo "æ­è€¶ï¼Œæˆ‘æœ‰ RAMDISK ï¼"
     git clone https://github.com/vincent5753/YT_ACV_Bot.git A:\YT_ACV_Bot\
     copy C:\ENV\Credential.ps1 A:\YT_ACV_Bot\Windows\Credential.ps1
     cd /d "A:\YT_ACV_Bot\Windows\"
     powershell -File "A:\YT_ACV_Bot\Windows\bot.ps1"
 ) else (
-    echo "RAMDISK ¦º¤F¡I"
+    echo "RAMDISK æ­»äº†ï¼"
 )
 pause
