@@ -6,3 +6,7 @@ alias l='ls -l'
 alias k='kubectl'
 alias ping8="ping 8.8.8.8"
 alias pingg="ping google.com"
+alias ga="git add . && git status"
+alias gc="git commit -s -m "
+alias gps="git push"
+alias gpl="git pull"
