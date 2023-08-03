@@ -7,4 +7,4 @@ sudo systemctl disable unattended-upgrades
 
 # install packages
 sudo apt-get update
-sudo apt-get install -y openssh-server htop tree jq
+sudo apt-get install -y openssh-server htop tree jq qemu-guest-agent
