@@ -17,6 +17,7 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 ### compress
 如果時間對你不是問題，而且你需要(想要)好的壓縮比，為何不試試無腦壓壓看不同的字典大小？
 這個子專案會自動壓縮並刪除多餘的壓縮檔，結論就是你能夠獲得(大概是)最小的壓縮檔
+>註: 你會需要把 `7z` 加入 `環境變數`
 
 TDL
 + (於壓縮檔案大小遞減時)自動刪除多餘壓縮檔
