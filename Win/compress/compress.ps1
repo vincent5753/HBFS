@@ -57,15 +57,16 @@ Get-ChildItem -Directory | ForEach-Object {
 		    if("$_" -eq "$minsizefile"){
 		      Write-Host "[info] 嘿，這是最小檔案"
 		  }else{
-		    Write-Host "$_ 不是最小檔案，幫你刪掉"
+		    #Write-Host "$_ 不是最小檔案，幫你刪掉"
 		    Remove-Item -Path "$_"
 		    }
 	    }
     }
     Write-Output ""
     #ls | Sort-Object -Property Length | Select-Object -Property Length, Name    
-    Write-Output "### 不同資料夾分隔線 ###"
+    #Write-Output "### 不同資料夾分隔線 ###"
   }
+  Clear-Host
   ls | Sort-Object -Property Length | Select-Object -Property Length, Name
   Write-Output ""
 }
