@@ -16,9 +16,10 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 ## Win
 ### compress
 如果時間對你不是問題，而且你需要(想要)好的壓縮比，為何不試試無腦壓壓看不同的字典大小？
+這個子專案會自動壓縮並刪除多餘的壓縮檔，結論就是你能夠獲得(大概是)最小的壓縮檔
 
 TDL
-+ 自動刪除多餘壓縮檔
++ (於壓縮檔案大小遞減時)自動刪除多餘壓縮檔
 
 ### nirvana.bat
 我的環境調整腳本，原則上灌系統才會需要它
