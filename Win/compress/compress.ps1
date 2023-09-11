@@ -31,7 +31,10 @@ Get-ChildItem -Directory | ForEach-Object {
     foreach ($mdsize in $mdsizelist){
 	    Clear-Host
       Write-Output "<<< Folder: $_   mdsize: ${mdsize}m >>>"
-      7z a -t7z -m0=lzma2 -mx=9 -ms=on -mmt=2 -mfb=64 -md="${mdsize}m"  "`"$_(${mdsize},64).7z`"" "`"$_`""
+      $Process = Start-Process "C:\Program Files\7-Zip\7z.exe" -ArgumentList "a","-t7z","-m0=lzma2","-mx=9","-ms=on","-mmt=2","-mfb=64","-md=${mdsize}m","`"$_(${mdsize},64).7z`"","`"$_`"" -NoNewWindow -PassThru
+      $Process.PriorityClass = [System.Diagnostics.ProcessPriorityClass]::High
+      $Process.WaitForExit()
+      #7z a -t7z -m0=lzma2 -mx=9 -ms=on -mmt=2 -mfb=64 -md="${mdsize}m"  "`"$_(${mdsize},64).7z`"" "`"$_`""
 	    Write-Output "Exit Code: $LASTEXITCODE"
 	    $acvfile = "$_(${mdsize},64).7z"
 	    Write-Host "AcvFile: $acvfile"
@@ -50,14 +53,14 @@ Get-ChildItem -Directory | ForEach-Object {
       Write-Output ""
       #Write-Output "### 單資料夾分隔線 ###"
     }
-	  Clear-Host
+	  #Clear-Host
 	  Get-ChildItem -File | ForEach-Object {
 	    #Write-Host "$_"
 	    if("$_" -like "$folder*" ){
 		    if("$_" -eq "$minsizefile"){
 		      Write-Host "[info] 嘿，這是最小檔案"
 		  }else{
-		    #Write-Host "$_ 不是最小檔案，幫你刪掉"
+		    Write-Host "$_ 不是最小檔案，幫你刪掉"
 		    Remove-Item -Path "$_"
 		    }
 	    }
