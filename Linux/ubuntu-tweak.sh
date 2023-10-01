@@ -7,7 +7,7 @@ sudo systemctl disable unattended-upgrades
 
 # Install packages
 sudo apt-get update
-sudo apt-get install -y openssh-server htop tree jq qemu-guest-agent
+sudo apt-get install -y openssh-server htop tree jq qemu-guest-agent glances
 
 # My preference
 echo 'export EDITOR="nano"' >> ~/.bashrc
