@@ -55,15 +55,15 @@ REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "VP's Daemon.bat
 + 蝦皮購物
 + Mo PTT
 + 4Gamers
-+ 麥當勞
++ ~~麥當勞~~
 + YAMAHA LIFE
 + 飛貓盤
 + HoYoLAB
 + aifian
 
 已知問題 or 您可能需要留意
-+ 麥當當偶爾會改套件名
 + 在網路速度不夠快時，預設的等待時間可能會逾時
++ 修正新版蝦皮簽到
 
 TDL
 + 針對比較常出問題的 APP 調整執行順序
