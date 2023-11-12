@@ -10,7 +10,7 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 `*.scpt` 為 MacOS 限定腳本 </br>
 `crontab.txt` 為僅限 MacOS 能執行的 crontab
 
-## Linux
+## [Linux](https://github.com/vincent5753/HBFS/tree/main/Linux)
 ### Ubuntu
 
 ## [Windows](https://github.com/vincent5753/HBFS/blob/main/Win/README.md)
