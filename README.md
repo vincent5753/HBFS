@@ -7,8 +7,7 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 原則上會是 Linux 和 macOS 都能用的 調整/腳本 
 
 ## [macOS](https://github.com/vincent5753/HBFS/tree/main/Mac)
-`*.scpt` 為 macOS 限定腳本 </br>
-`crontab.txt` 為僅限 macOS 能執行的 crontab
+macOS 專屬的腳本、tweaks
 
 ## [Linux](https://github.com/vincent5753/HBFS/tree/main/Linux)
 ### Ubuntu
