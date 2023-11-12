@@ -10,9 +10,10 @@ This repo is kinda like a warehouse that I put tweaks to my machines that can im
 macOS 專屬的腳本、tweaks
 
 ## [Linux](https://github.com/vincent5753/HBFS/tree/main/Linux)
-### Ubuntu
+Linux-based 作業系統相關的調整
 
 ## [Windows](https://github.com/vincent5753/HBFS/tree/main/Win)
 原則上不會再有更新，因為 M$FT 的一堆爛政策，預計 2025 年前主力工作機會換成非 Win-Based 的系統 :)
 
 ## [Android](https://github.com/vincent5753/HBFS/tree/main/Android)
+Android 專屬的腳本，未來有機會加一些 tweak 腳本
