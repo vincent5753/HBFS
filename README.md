@@ -17,3 +17,6 @@ Linux-based 作業系統相關的調整
 
 ## [Android](https://github.com/vincent5753/HBFS/tree/main/Android)
 Android 專屬的腳本，未來有機會加一些 tweak 腳本
+
+TDL</br>
+>Hoyolab 支援多語言？
