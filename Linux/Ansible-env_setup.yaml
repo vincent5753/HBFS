@@ -1,0 +1,204 @@
+- name: Setup ENV for daily driver
+  gather_facts: true
+  hosts: asus
+  tasks:
+  - name: Uninstall packages i do not need (Ubuntu with x86_64 arch)
+    when: ansible_facts['distribution'] == 'Ubuntu' and ansible_architecture == "x86_64"
+    block:
+      - name: Uninstall using apt
+        ansible.builtin.apt:
+          name:
+            - gnome-calculator
+            - gnome-calendar
+            - gnome-clocks
+            - gnome-mines
+            - gnome-mahjongg
+            - gnome-todo
+            - gnome-todo-common
+            - gnome-user-docs
+            - gnome-sudoku
+            - gnome-video-effects
+            - shotwell-common
+            - shotwell
+            - remmina-common
+            - remmina-plugin-rdp
+            - remmina-plugin-secret
+            - remmina-plugin-vnc
+            - remmina
+          state: absent
+        become: true
+
+  - name: Install useful packages (Ubuntu with x86_64 arch)
+    when: ansible_facts['distribution'] == 'Ubuntu' and ansible_architecture == "x86_64"
+    block:
+      - name: Install useful packages using apt
+        ansible.builtin.apt:
+          update_cache: yes
+          name:
+            - android-tools-adb
+            - android-tools-fastboot
+            - ansible
+            - apt-transport-https
+            - build-essential
+            - ca-certificates
+            - cowsay
+            - curl
+            - fcitx5
+            - ffmpeg
+            - gcc-12
+            - git
+            - glances
+            - gnupg
+            - golang
+            - htop
+            - imagemagick
+            - keepassxc
+            - libgcc-12-dev
+            - maven
+            - python3-pip
+            - tree
+            - vagrant
+            - vlc
+            - wget
+          state: present
+        become: true
+
+  - name: Create directory for storing files for ansible during the installation
+    ansible.builtin.file:
+      path: "/home/{{ ansible_env.USER }}/Downloads/ansible"
+      state: directory
+
+  - name: Download and install Chrome (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Download Chrome deb from Google
+        get_url:
+          url="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+          dest="/home/{{ ansible_env.USER }}/Downloads/ansible/Chrome-x86_64.deb"
+      - name: Install Chrome deb using apt
+        ansible.builtin.apt:
+          deb="/home/{{ ansible_env.USER }}/Downloads/ansible/Chrome-x86_64.deb"
+        become: true
+
+  - name: Download and install Slack Desktop (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Download Slack deb from Salesforce
+        get_url:
+          url="https://downloads.slack-edge.com/desktop-releases/linux/x64/4.41.105/slack-desktop-4.41.105-amd64.deb"
+          dest="/home/{{ ansible_env.USER }}/Downloads/ansible/Slack-x86_64.deb"
+      - name: Install Slack deb using apt
+        ansible.builtin.apt:
+          deb="/home/{{ ansible_env.USER }}/Downloads/ansible/Slack-x86_64.deb"
+        become: true
+
+  - name: Install VMware workstation (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Changing permission of "VMware bundle", adding "+x"
+        file: dest=files/VMware-Workstation-Full-17.6.3-24583834.x86_64.bundle mode=a+x
+        ignore_errors: true
+      - name: Execute the VMware bundle
+        script: files/VMware-Workstation-Full-17.6.3-24583834.x86_64.bundle
+        become: true
+        ignore_errors: true
+
+  - name: Disable and stop snap-related services
+    systemd:
+      name: "{{ item }}"
+      enabled: false
+      state: stopped
+      masked: yes
+    loop:
+      - snapd
+      - snapd.socket
+      - snapd.seeded
+
+  - name: Download and install VSCodium (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Download VSCodium deb from GitHub
+        get_url:
+          url="https://github.com/VSCodium/vscodium/releases/download/1.98.2.25078/codium_1.98.2.25078_amd64.deb"
+          dest="/home/{{ ansible_env.USER }}/Downloads/ansible/VSCodium-x86_64.deb"
+      - name: Install VSCodium deb using apt
+        ansible.builtin.apt:
+          deb="/home/{{ ansible_env.USER }}/Downloads/ansible/VSCodium-x86_64.deb"
+        become: true
+
+  - name: Download and install 1Pass (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Download 1Password deb from 1Password
+        get_url:
+          url="https://downloads.1password.com/linux/debian/amd64/stable/1password-latest.deb"
+          dest="/home/{{ ansible_env.USER }}/Downloads/ansible/1password-x86_64.deb"
+      - name: Install 1Password deb using apt
+        ansible.builtin.apt:
+          deb="/home/{{ ansible_env.USER }}/Downloads/ansible/1password-x86_64.deb"
+        become: true
+
+  - name: Install 小麥注音輸入法 (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Install 小麥注音輸入法 dependencies using apt
+        ansible.builtin.apt:
+          name:
+            - pkg-config
+            - fcitx5
+            - libfcitx5core-dev
+            - libfcitx5config-dev
+            - libfcitx5utils-dev
+            - fcitx5-modules-dev
+            - cmake
+            - extra-cmake-modules
+            - gettext
+            - libfmt-dev
+            - libicu-dev
+            - libjson-c-dev
+          state: present
+        become: true
+
+  - name: Install scrcpy (x86_64)
+    when: ansible_facts['architecture'] == "x86_64"
+    block:
+      - name: Install scrcpy dependencies using apt
+        ansible.builtin.apt:
+          name:
+            - ffmpeg
+            - libsdl2-2.0-0
+            - adb
+            - wget
+            - gcc
+            - git
+            - pkg-config
+            - meson
+            - ninja-build
+            - libsdl2-dev
+            - libavcodec-dev
+            - libavdevice-dev
+            - libavformat-dev
+            - libavutil-dev
+            - libswresample-dev
+            - libusb-1.0-0
+            - libusb-1.0-0-dev
+          state: present
+        become: true
+
+  - name: Install grub-customizer
+    when: ansible_facts['architecture'] == "x86_64" and ansible_facts['distribution'] == 'Ubuntu'
+    block:
+      - name: Adding grub-customizer repo
+        become: true
+        ansible.builtin.apt_repository:
+          repo: ppa:danielrichter2007/grub-customizer
+          state: present
+      - name: Install grub-customizer using apt
+        become: true
+        ansible.builtin.apt:
+          update_cache: yes
+          name: grub-customizer
+
+  - name: Install Google Cloud Storage package
+    ansible.builtin.pip:
+      name: google-cloud-storage
