@@ -1,6 +1,6 @@
 - name: Setup ENV for daily driver
   gather_facts: true
-  hosts: asus
+  hosts: dell
   tasks:
   - name: Uninstall packages i do not need (Ubuntu with x86_64 arch)
     when: ansible_facts['distribution'] == 'Ubuntu' and ansible_architecture == "x86_64"
@@ -55,10 +55,13 @@
             - keepassxc
             - libgcc-12-dev
             - maven
+            - make
             - python3-pip
+            - smartmontools
             - tree
             - vagrant
             - vlc
+            - virtualbox
             - wget
           state: present
         become: true
@@ -158,6 +161,31 @@
             - libjson-c-dev
           state: present
         become: true
+      - name: Clone fcitx5-mcbopomofo repo from GitHub
+        ansible.builtin.git:
+          repo: "https://github.com/openvanilla/fcitx5-mcbopomofo.git"
+          dest: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo"
+      - name: Create directory for building fcitx5-mcbopomofo
+        ansible.builtin.file:
+          path: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo/build"
+          state: directory
+      - name: Configure fcitx5-mcbopomofo with CMake
+        ansible.builtin.command:
+          cmd: "cmake ../ -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release"
+          chdir: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo/build"
+      - name: Build fcitx5-mcbopomofo with make
+        ansible.builtin.command:
+          cmd: "make"
+          chdir: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo/build"
+      - name: Install fcitx5-mcbopomofo
+        ansible.builtin.command:
+          cmd: "make install"
+          chdir: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo/build"
+        become: true 
+      - name: Update icon caches
+        ansible.builtin.command:
+          cmd: "update-icon-caches /usr/share/icons/*"
+        become: true
 
   - name: Install scrcpy (x86_64)
     when: ansible_facts['architecture'] == "x86_64"
@@ -199,6 +227,98 @@
           update_cache: yes
           name: grub-customizer
 
-  - name: Install Google Cloud Storage package
-    ansible.builtin.pip:
-      name: google-cloud-storage
+  - name: Install GCP related packages
+    when: ansible_facts['architecture'] == "x86_64" and ansible_facts['distribution'] == 'Ubuntu'
+    block:
+      - name: Install required packages
+        ansible.builtin.apt:
+          name:
+            - apt-transport-https
+            - ca-certificates
+            - gnupg
+            - curl
+          state: present
+          update_cache: true
+        become: true
+      - name: Download Google Cloud public key
+        get_url:
+          url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+          dest: /tmp/google-cloud-key.gpg
+      - name: Import Google Cloud public key
+        command: gpg --yes --dearmor -o /usr/share/keyrings/cloud.google.gpg /tmp/google-cloud-key.gpg
+        become: true
+      - name: Add Google Cloud SDK repository
+        copy:
+          content: "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main"
+          dest: /etc/apt/sources.list.d/google-cloud-sdk.list
+        become: true
+      - name: Update apt cache and install google-cloud-cli
+        apt:
+          name: google-cloud-cli
+          state: present
+          update_cache: true
+        become: true
+      - name: Install Google Cloud Storage package using pip
+        ansible.builtin.pip:
+          name: google-cloud-storage
+  - name: Setup zsh
+    block:
+      - name: Install zsh
+        ansible.builtin.apt:
+          name: zsh
+          state: present
+        become: true
+      - name: Set user shell to zsh
+        ansible.builtin.user:
+          name: "{{ ansible_env.USER }}"
+          shell: /bin/zsh
+        become: true
+      - name: Install Oh My Zsh
+        ansible.builtin.git:
+          repo: https://github.com/ohmyzsh/ohmyzsh.git
+          dest: ~/.oh-my-zsh
+          depth: 1
+      - name: Install zsh-autosuggestions plugin
+        ansible.builtin.git:
+          repo: https://github.com/zsh-users/zsh-autosuggestions
+          dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+          depth: 1
+      - name: Install zsh-completions plugin
+        ansible.builtin.git:
+          repo: https://github.com/zsh-users/zsh-completions
+          dest: ~/.oh-my-zsh/custom/plugins/zsh-completions
+          depth: 1
+      - name: Install zsh-syntax-highlighting plugin # noqa: latest
+        ansible.builtin.git:
+          repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
+          dest: ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+          depth: 1
+  - name: Adding fctix5 on startup
+    block:
+    - name: Ensure .config and autostart directories exist
+      file:
+        path: "{{ item }}"
+        state: directory
+        owner: "{{ ansible_env.USER }}"
+        group: "{{ ansible_env.USER }}"
+        mode: '0700'
+      loop:
+        - /home/{{ ansible_env.USER }}/.config
+        - /home/{{ ansible_env.USER }}/.config/autostart
+    - name: Create fcitx.desktop file
+      copy:
+        content: |
+          [Desktop Entry]
+          Type=Application
+          Exec=fcitx5 -d
+          Hidden=false
+          NoDisplay=false
+          X-GNOME-Autostart-enabled=true
+          Name[en_US]=fcitx5 -d
+          Name=fcitx
+          Comment[en_US]=
+          Comment=
+        dest: /home/{{ ansible_env.USER }}/.config/autostart/fcitx.desktop
+        owner: "{{ ansible_env.USER }}"
+        group: "{{ ansible_env.USER }}"
+        mode: '0700'
