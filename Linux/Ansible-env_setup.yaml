@@ -55,6 +55,7 @@
             - glances
             - gnupg
             - golang
+            - hashcat
             - htop
             - imagemagick
             - keepassxc
