@@ -8,6 +8,7 @@
       - name: Uninstall using apt
         ansible.builtin.apt:
           name:
+            - aisleriot
             - gnome-calculator
             - gnome-calendar
             - gnome-clocks
@@ -25,6 +26,8 @@
             - remmina-plugin-secret
             - remmina-plugin-vnc
             - remmina
+            - transmission-common
+            - transmission-gtk
           state: absent
         become: true
 
@@ -61,6 +64,7 @@
             - tree
             - vagrant
             - vlc
+            - vagrant
             - virtualbox
             - wget
           state: present
@@ -112,10 +116,12 @@
       enabled: false
       state: stopped
       masked: yes
+    ignore_errors: true
     loop:
       - snapd
       - snapd.socket
       - snapd.seeded
+    become: true
 
   - name: Download and install VSCodium (x86_64)
     when: ansible_facts['architecture'] == "x86_64"
@@ -181,11 +187,49 @@
         ansible.builtin.command:
           cmd: "make install"
           chdir: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo/build"
-        become: true 
+        become: true
       - name: Update icon caches
         ansible.builtin.command:
           cmd: "update-icon-caches /usr/share/icons/*"
         become: true
+
+      # - name: Ensure fcitx5 profile directory exists
+      #   ansible.builtin.file:
+      #     path: "{{ item }}"
+      #     state: directory
+      #     owner: "{{ ansible_env.USER }}"
+      #     group: "{{ ansible_env.USER }}"
+      #     mode: '0700'
+      #   loop:
+      #     - /home/{{ ansible_env.USER }}/.config
+      #     - /home/{{ ansible_env.USER }}/.config/fcitx5
+
+      # - name: Write fcitx5 profile
+      #   ansible.builtin.copy:
+      #     dest: ~/.config/fcitx5/profile
+      #     content: |
+      #       [Groups/0]
+      #       # Group Name
+      #       Name: Default
+      #       # Layout
+      #       Default Layout: us
+      #       # Default Input Method
+      #       DefaultIM: keyboard-us
+
+      #       [Groups/0/Items/0]
+      #       # Name
+      #       Name: mcbopomofo
+      #       # Layout
+      #       Layout:
+
+      #       [Groups/0/Items/1]
+      #       # Name
+      #       Name: keyboard-us
+      #       # Layout
+      #       Layout:
+
+      #       [GroupOrder]
+      #       0: Default
 
   - name: Install scrcpy (x86_64)
     when: ansible_facts['architecture'] == "x86_64"
@@ -211,6 +255,15 @@
             - libusb-1.0-0
             - libusb-1.0-0-dev
           state: present
+        become: true
+      - name: Clone scrcpy repository
+        ansible.builtin.git:
+          repo: https://github.com/Genymobile/scrcpy
+          dest: /home/{{ ansible_env.USER }}/Downloads/ansible/scrcpy
+      - name: Install scrcpy from release
+        ansible.builtin.shell:
+          cmd: ./install_release.sh
+          chdir: /home/{{ ansible_env.USER }}/Downloads/ansible/scrcpy
         become: true
 
   - name: Install grub-customizer
@@ -288,7 +341,7 @@
           repo: https://github.com/zsh-users/zsh-completions
           dest: ~/.oh-my-zsh/custom/plugins/zsh-completions
           depth: 1
-      - name: Install zsh-syntax-highlighting plugin # noqa: latest
+      - name: Install zsh-syntax-highlighting plugin
         ansible.builtin.git:
           repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
           dest: ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
