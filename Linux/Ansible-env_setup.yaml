@@ -28,6 +28,7 @@
             - remmina
             - transmission-common
             - transmission-gtk
+            - rhythmbox*
           state: absent
         become: true
 
@@ -187,7 +188,7 @@
         ansible.builtin.command:
           cmd: "make install"
           chdir: "/home/{{ ansible_env.USER }}/Downloads/ansible/fcitx5-mcbopomofo/build"
-        become: true
+        become: true 
       - name: Update icon caches
         ansible.builtin.command:
           cmd: "update-icon-caches /usr/share/icons/*"
