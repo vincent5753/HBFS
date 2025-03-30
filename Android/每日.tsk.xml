@@ -1,7 +1,7 @@
 <TaskerData sr="" dvi="1" tv="6.4.15">
 	<Task sr="task2">
 		<cdate>1681235784748</cdate>
-		<edate>1743167183117</edate>
+		<edate>1743351021724</edate>
 		<id>2</id>
 		<nme>每日</nme>
 		<pri>100</pri>
@@ -353,6 +353,57 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act25" ve="7">
+			<code>107361459</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Actions To Perform: swipe(point,962\,1215,left,600)
+Not In AutoInput: true
+Not In Tasker: true
+Separator: ,
+Check Millis: 1000</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ailastbounds
+Last Bounds
+Bounds (left,top,right,bottom) of the item that the action last interacted with&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ailastcoordinates
+Last Coordinates
+Center coordinates (x,y) of the item that the action last interacted with&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"_action":"swipe(point,962\\,1215,left,600)","_additionalOptions":{"checkMs":"1000","separator":",","withCoordinates":false},"_whenToPerformAction":{"notInAutoInput":true,"notInTasker":true},"generatedValues":{}}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>137a367c-08ae-493f-97ce-eb9fbe5490f9</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentActionv2</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigActionv2</Str>
+			<Int sr="arg3" val="60"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="4"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act27" ve="7">
 			<code>1732635924</code>
 			<se>false</se>
 			<Bundle sr="arg0">
@@ -406,7 +457,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act26" ve="7">
+		<Action sr="act28" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="4"/>
@@ -414,7 +465,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act27" ve="7">
+		<Action sr="act29" ve="7">
 			<code>18</code>
 			<se>false</se>
 			<App sr="arg0">
@@ -423,25 +474,6 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 				<label>YAMAHA LIFE</label>
 			</App>
 			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act28" ve="7">
-			<code>20</code>
-			<App sr="arg0">
-				<appClass>com.mihoyo.hoyolab.splash.splash.HoYoSplashActivity</appClass>
-				<appPkg>com.mihoyo.hoyolab</appPkg>
-				<label>HoYoLAB</label>
-			</App>
-			<Str sr="arg1" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act29" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="5"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>30</code>
@@ -452,6 +484,25 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act30" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.mihoyo.hoyolab.splash.splash.HoYoSplashActivity</appClass>
+				<appPkg>com.mihoyo.hoyolab</appPkg>
+				<label>HoYoLAB</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act32" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -504,7 +555,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="1"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act31" ve="7">
+		<Action sr="act33" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="5"/>
@@ -512,7 +563,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act32" ve="7">
+		<Action sr="act34" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -565,7 +616,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="1"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act33" ve="7">
+		<Action sr="act35" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="5"/>
@@ -573,7 +624,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act34" ve="7">
+		<Action sr="act36" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -626,7 +677,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act35" ve="7">
+		<Action sr="act37" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="13"/>
@@ -634,7 +685,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act36" ve="7">
+		<Action sr="act38" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -687,7 +738,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act37" ve="7">
+		<Action sr="act39" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -695,7 +746,18 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act38" ve="7">
+		<Action sr="act4" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.shopee.app.ui.home.HomeActivity_</appClass>
+				<appPkg>com.shopee.tw</appPkg>
+				<label>蝦皮購物</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act40" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -748,7 +810,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act39" ve="7">
+		<Action sr="act41" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -756,18 +818,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act4" ve="7">
-			<code>20</code>
-			<App sr="arg0">
-				<appClass>com.shopee.app.ui.home.HomeActivity_</appClass>
-				<appPkg>com.shopee.tw</appPkg>
-				<label>蝦皮購物</label>
-			</App>
-			<Str sr="arg1" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act40" ve="7">
+		<Action sr="act42" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -820,7 +871,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act41" ve="7">
+		<Action sr="act43" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -828,7 +879,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act42" ve="7">
+		<Action sr="act44" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -881,7 +932,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act43" ve="7">
+		<Action sr="act45" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -889,7 +940,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act44" ve="7">
+		<Action sr="act46" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -942,7 +993,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act45" ve="7">
+		<Action sr="act47" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -950,7 +1001,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act46" ve="7">
+		<Action sr="act48" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1003,7 +1054,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act47" ve="7">
+		<Action sr="act49" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1056,7 +1107,15 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act48" ve="7">
+		<Action sr="act5" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act50" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -1064,7 +1123,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act49" ve="7">
+		<Action sr="act51" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1117,15 +1176,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act5" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="5"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act50" ve="7">
+		<Action sr="act52" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="500"/>
 			<Int sr="arg1" val="0"/>
@@ -1133,7 +1184,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act51" ve="7">
+		<Action sr="act53" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1186,7 +1237,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act52" ve="7">
+		<Action sr="act54" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="3"/>
@@ -1194,7 +1245,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act53" ve="7">
+		<Action sr="act55" ve="7">
 			<code>20</code>
 			<App sr="arg0">
 				<appClass>whatsmedia.com.chungyo_android.Activity.CheckMaintainActivity</appClass>
@@ -1205,7 +1256,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act54" ve="7">
+		<Action sr="act56" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="10"/>
@@ -1213,7 +1264,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act55" ve="7">
+		<Action sr="act57" ve="7">
 			<code>1732635924</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1266,7 +1317,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="23"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
-		<Action sr="act56" ve="7">
+		<Action sr="act58" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="3"/>
@@ -1274,7 +1325,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
-		<Action sr="act57" ve="7">
+		<Action sr="act59" ve="7">
 			<code>1732635924</code>
 			<se>false</se>
 			<Bundle sr="arg0">
@@ -1326,57 +1377,6 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="23"/>
-			<Int sr="arg4" val="1"/>
-		</Action>
-		<Action sr="act58" ve="7">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="5"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act59" ve="7">
-			<code>107361459</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
-					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Actions To Perform: swipe(point,949\,1245,down,400)
-Not In AutoInput: true
-Not In Tasker: true
-Separator: ,
-Check Millis: 1000</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
-					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ailastbounds
-Last Bounds
-Bounds (left,top,right,bottom) of the item that the action last interacted with&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ailastcoordinates
-Last Coordinates
-Center coordinates (x,y) of the item that the action last interacted with&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<parameters>{"_action":"swipe(point,949\\,1245,down,400)","_additionalOptions":{"checkMs":"1000","separator":",","withCoordinates":false},"_whenToPerformAction":{"notInAutoInput":true,"notInTasker":true},"generatedValues":{}}</parameters>
-					<parameters-type>java.lang.String</parameters-type>
-					<plugininstanceid>137a367c-08ae-493f-97ce-eb9fbe5490f9</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentActionv2</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigActionv2</Str>
-			<Int sr="arg3" val="60"/>
 			<Int sr="arg4" val="1"/>
 		</Action>
 		<Action sr="act6" ve="7">
@@ -1436,12 +1436,63 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 		<Action sr="act60" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="10"/>
+			<Int sr="arg1" val="5"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
 		<Action sr="act61" ve="7">
+			<code>107361459</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<Password>&lt;null&gt;</Password>
+					<Password-type>java.lang.String</Password-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Actions To Perform: swipe(point,949\,1245,down,400)
+Not In AutoInput: true
+Not In Tasker: true
+Separator: ,
+Check Millis: 1000</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ailastbounds
+Last Bounds
+Bounds (left,top,right,bottom) of the item that the action last interacted with&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ailastcoordinates
+Last Coordinates
+Center coordinates (x,y) of the item that the action last interacted with&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"_action":"swipe(point,949\\,1245,down,400)","_additionalOptions":{"checkMs":"1000","separator":",","withCoordinates":false},"_whenToPerformAction":{"notInAutoInput":true,"notInTasker":true},"generatedValues":{}}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>137a367c-08ae-493f-97ce-eb9fbe5490f9</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoinput.intent.IntentActionv2</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigActionv2</Str>
+			<Int sr="arg3" val="60"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act62" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act63" ve="7">
 			<code>18</code>
 			<App sr="arg0">
 				<appClass>whatsmedia.com.chungyo_android.Activity.CheckMaintainActivity</appClass>
@@ -1450,7 +1501,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			</App>
 			<Int sr="arg1" val="0"/>
 		</Action>
-		<Action sr="act62" ve="7">
+		<Action sr="act64" ve="7">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="1"/>
