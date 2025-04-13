@@ -1,0 +1,27 @@
+# Android
+com.android.bookmarkprovider
+com.android.calculator2
+com.android.soundrecorder
+
+# Google
+com.google.android.apps.books
+com.google.android.apps.googleassistant
+com.google.android.apps.kids.home
+com.google.android.apps.mediahome.launcher
+com.google.android.apps.tachyon
+com.google.android.apps.youtube.kids
+com.google.android.apps.youtube.music
+com.google.android.calendar
+com.google.android.keep
+com.google.android.videos
+com.google.mainline.telemetry
+google.android.apps.youtube
+google.android.apps.youtube.kids
+google.android.apps.youtube.music
+
+# acer
+com.acer.video
+
+# SONY
+com.sonymobile.mx.android
+com.sonymobile.mx.android.mx_tp_validation_helper
