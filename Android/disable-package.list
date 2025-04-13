@@ -1,27 +1,38 @@
 # Android
-com.android.bookmarkprovider
+# 計算機
 com.android.calculator2
+# 錄音機
 com.android.soundrecorder
 
 # Google
+## Play 圖書
 com.google.android.apps.books
+## Google 助理
 com.google.android.apps.googleassistant
+## Kids Space
 com.google.android.apps.kids.home
+## Entertainment Space
 com.google.android.apps.mediahome.launcher
+## Meet (Old "Duo")
 com.google.android.apps.tachyon
+## YT kids
 com.google.android.apps.youtube.kids
+# YT Music
 com.google.android.apps.youtube.music
+# 行事曆
 com.google.android.calendar
+# Keep
 com.google.android.keep
+# Google TV
 com.google.android.videos
+# 它叫 “telemetry”
 com.google.mainline.telemetry
-google.android.apps.youtube
-google.android.apps.youtube.kids
-google.android.apps.youtube.music
 
 # acer
+## Acer Video Player
 com.acer.video
 
 # SONY
+## MyXperia
 com.sonymobile.mx.android
 com.sonymobile.mx.android.mx_tp_validation_helper
