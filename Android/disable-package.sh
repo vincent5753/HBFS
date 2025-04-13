@@ -12,6 +12,7 @@ if [[ -z "${android_version}" ]]; then
   exit 1
 fi
 
+# ref: https://android.stackexchange.com/questions/56620/enable-and-disable-system-apps-via-adb
 if (( $(echo "${android_version} > 5" | bc -l) )); then
   # Android version is higher than Lollipop.
   echo "Android version ${android_version} is higher than Lollipop, will use \"pm disable-user\" to disable packages."
