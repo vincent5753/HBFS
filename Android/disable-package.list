@@ -34,31 +34,30 @@ com.miui.analytics
 ## Fucking ADs
 com.miui.systemAdSolution
 ## Quick Apps
+## 快應用 / 智慧生活 (Smart Scenes)
 com.miui.hybrid
 com.miui.hybrid.accessory
 ## MSA or MIUI Ad Services
 com.miui.msa.global
-## Mi Drop
-com.xiaomi.midro
+## ShareMe / Mi Drop
+com.xiaomi.midrop
 ## Joyose
 com.xiaomi.joyose
-## Mi Share
+## 小米互傳 / Mi Share
 com.miui.mishare.connectivity
 ## Feedback
 com.miui.bugreport
 ## Music
 com.miui.player
-## Quick Ball
+## 懸浮球 / Quick Ball
 com.miui.touchassistant
-## Notes
+## 筆記 / Notes
 com.miui.notes
-## UniPlay Service
-com.milink.service
-## Mi Calendar
+## 日曆 / Mi Calendar
 com.xiaomi.calendar
 ## MIUI to MIUI Message
 com.xiaomi.mircs
-## Bug report
+## 用戶回饋 / Bug report
 com.miui.bugreport
 ## MIUI FM Module
 com.miui.fmservice
@@ -72,6 +71,8 @@ com.miui.vsimcore
 com.miui.daemon
 ## 服務與回饋
 com.miui.miservice
+## 投影
+com.milink.service
 
 # acer
 ## Acer Video Player
