@@ -28,6 +28,51 @@ com.google.android.videos
 # 它叫 “telemetry”
 com.google.mainline.telemetry
 
+# xiaomi
+## Installs shitty apps
+com.miui.analytics
+## Fucking ADs
+com.miui.systemAdSolution
+## Quick Apps
+com.miui.hybrid
+com.miui.hybrid.accessory
+## MSA or MIUI Ad Services
+com.miui.msa.global
+## Mi Drop
+com.xiaomi.midro
+## Joyose
+com.xiaomi.joyose
+## Mi Share
+com.miui.mishare.connectivity
+## Feedback
+com.miui.bugreport
+## Music
+com.miui.player
+## Quick Ball
+com.miui.touchassistant
+## Notes
+com.miui.notes
+## UniPlay Service
+com.milink.service
+## Mi Calendar
+com.xiaomi.calendar
+## MIUI to MIUI Message
+com.xiaomi.mircs
+## Bug report
+com.miui.bugreport
+## MIUI FM Module
+com.miui.fmservice
+## 生活黃頁
+com.miui.yellowpage
+## 米幣支付
+com.xiaomi.calendar
+## VsimCore
+com.miui.vsimcore 
+## MIUI Daemon
+com.miui.daemon
+## 服務與回饋
+com.miui.miservice
+
 # acer
 ## Acer Video Player
 com.acer.video
