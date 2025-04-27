@@ -1,7 +1,7 @@
 #!/bin/bash
 
 list_file="disable-package.list"
-android_version=$(adb shell getprop ro.build.version.release)
+android_version=$(adb shell getprop ro.build.version.release | awk -F "." '{print $1}')
 android_codename=$(adb shell getprop ro.build.version.codename)
 
 echo "Android Version: ${android_version}"
