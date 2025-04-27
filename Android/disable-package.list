@@ -4,6 +4,7 @@ com.android.calculator2
 # 錄音機
 com.android.soundrecorder
 
+
 # Google
 ## Play 圖書
 com.google.android.apps.books
@@ -17,16 +18,24 @@ com.google.android.apps.mediahome.launcher
 com.google.android.apps.tachyon
 ## YT kids
 com.google.android.apps.youtube.kids
-# YT Music
+## YT Music
 com.google.android.apps.youtube.music
-# 行事曆
+## 行事曆
 com.google.android.calendar
-# Keep
+## Keep
 com.google.android.keep
-# Google TV
+## Google TV (Google Play 電影)
 com.google.android.videos
-# 它叫 “telemetry”
+## 它叫 “telemetry”
 com.google.mainline.telemetry
+## Currents (Old "Google Plus")
+com.google.android.apps.plus
+## Google 新聞
+com.google.android.apps.magazines
+## Hangouts
+com.google.android.talk
+## 街景服務 / Street View
+com.google.android.street
 
 # xiaomi
 ## Installs shitty apps
@@ -74,14 +83,121 @@ com.miui.miservice
 ## 投影
 com.milink.service
 
+
 # acer
 ## Acer Video Player
 com.acer.video
+
 
 # SONY
 ## MyXperia
 com.sonymobile.mx.android
 com.sonymobile.mx.android.mx_tp_validation_helper
+## Xperia 鍵盤 / Keyboard
+#com.sonyericsson.txtinput.uxp
+### 中文 / Chinese
+#com.sonyericsson.txtinput.chinese
+### 日文 / Japanese
+com.sonymobile.pobox
+## 小應用程式 / Small Apps
+### 計算機
+com.sonymobile.smallapps.calc
+### Active Clip
+com.sonymobile.smallapps.clipper
+### 計時器 / timer
+com.sonymobile.smallapps.timer
+### 瀏覽器 (單一小型應用程式)
+com.sonymobile.smallbrowser
+### Touch Block
+com.sonymobile.touchblocker
+### 影片小應用程式
+com.sonymobile.androidapps.smallmovies
+## 香機相關應用程式 / Camara related Apps
+### AR效果
+com.sonymobile.androidapp.cameraaddon.areffect
+### AR fun
+com.sonymobile.androidapp.cameraaddon.arfun
+### 多相機
+com.sonymobile.android.addoncamera.onlineremote
+### 正面特寫相片
+com.sonymobile.android.addoncamera.dual
+### 創意效果 / Creative effect 
+com.sonyericsson.android.addoncamera.artfilter
+### Timeshift burst
+com.sonymobile.android.addoncamera.timeshift
+### Sound Photo
+com.sonymobile.android.addoncamera.soundphoto
+### AR 遮罩
+com.sonymobile.android.addoncamera.facefusion
+### Info-eye
+com.sonymobile.androidapp.cameraaddon.infoeye
+### Live on YouTube
+com.sonymobile.camera.addon.livefromsonyxperia
+## TrackID
+com.sonyericsson.trackid
+com.sonyericsson.trackid.res.overlay_305
+### TrackID™ TV
+com.sonymobile.acr
+## What's New
+com.sonymobile.entrance
+## YouTube Extension
+com.sonymobile.music.youtubekaraokeplugin
+com.sonymobile.music.youtubeplugin
+## 天氣小工具
+com.sonyericsson.advancedwidget.weather
+## 待辦事項
+com.sonymobile.tasks
+## 支援
+com.sonymobile.support
+## 維基百科延伸模組
+com.sonymobile.music.wikipediaplugin
+## 電子郵件
+com.sonymobile.email
+## Lounge
+com.sonymobile.xperialounge.services
+## File Commander
+com.mobisystems.fileman
+## dEQP Tests
+com.sonymobile.deqp
+## Lifelog
+com.sonymobile.lifelog
+## 軟體更新
+com.sonyericsson.updatecenter
+## fota update service
+com.sonymobile.mtp.extension.fotaupdate
+## Retail Demo
+com.sonymobile.retaildemo
+## PS App
+com.scee.psxandroid
+## Podcast
+com.sonymobile.podcast
+## Photo Analyzer
+com.sonymobile.photoanalyzer
+## News Suite
+com.sony.nfx.app.sfrc
+## GAProxy
+com.sonymobile.googleanalyticsproxy
+## DUALSHOCK 4
+com.sonymobile.dualshockmanager
+## Device Usage
+com.sonymobile.phoneusage
+## Anonymous Usage Stats
+com.sonyericsson.idd.agent
+## OMA Client Provisioning
+com.sonyericsson.android.omacp
+## Oma Download Client
+com.sonyericsson.omadl
+## OmaV1AgentDownloadServices
+com.sonyericsson.android.drm.services
+## TV launcher
+com.sonyericsson.tvlauncher
+## Sony Select
+com.sonymobile.sonyselect
+## Xperia™ Lounge
+com.sonyericsson.xhs
+## Xperia™ Lounge Pass
+com.sonymobile.xperialounge.services
+
 
 # BlueStacks
 ## Store App
@@ -92,3 +208,19 @@ com.bluestacks.piggy
 com.bluestacks.quest
 gg.now.accounts
 gg.now.ads.service
+
+
+# 其他 / Others
+## Spotify
+com.spotify.music
+## Skype
+com.skype.raider
+## Netflix
+com.netflix.mediaclient
+## Facebook related
+### Facebook App
+com.facebook.katana
+### Meta App Installer
+com.facebook.system
+### Meta App Manager
+com.facebook.appmanager
