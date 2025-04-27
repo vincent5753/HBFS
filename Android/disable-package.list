@@ -112,7 +112,9 @@ com.sonymobile.smallbrowser
 com.sonymobile.touchblocker
 ### 影片小應用程式
 com.sonymobile.androidapps.smallmovies
-## 香機相關應用程式 / Camara related Apps
+## 相機相關應用程式 / Camara related Apps
+### 全景攝影 / Panorama (Old "3D Camera")
+com.sonyericsson.android.camera3d
 ### AR效果
 com.sonymobile.androidapp.cameraaddon.areffect
 ### AR fun
@@ -197,6 +199,10 @@ com.sonymobile.sonyselect
 com.sonyericsson.xhs
 ## Xperia™ Lounge Pass
 com.sonymobile.xperialounge.services
+## Smart Connect
+com.sonyericsson.extras.liveware
+## 影片建立工具 / Movie Creator
+com.sonymobile.moviecreator.rmm
 
 
 # BlueStacks
