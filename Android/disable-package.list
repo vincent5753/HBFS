@@ -36,6 +36,11 @@ com.google.android.apps.magazines
 com.google.android.talk
 ## 街景服務 / Street View
 com.google.android.street
+## 雲端列印 / Cloud Print
+com.google.android.apps.cloudprint
+## Market 意見回饋代理程式 / Market Feedback Agent 
+com.google.android.feedback
+
 
 # xiaomi
 ## Installs shitty apps
@@ -87,6 +92,24 @@ com.milink.service
 # acer
 ## Acer Video Player
 com.acer.video
+## Acer Live Updater
+com.acer.android.liveupdater
+## Acer Suggest powered by Digital Turbine
+com.LogiaGroup.LogiaDeck
+## AcerNidus
+com.acer.android.acernidus
+## AcerOOBE
+com.acer.android.oobe
+## Amundsenre
+com.acer.map.amundsen
+## EZ Snap
+com.acer.ezsnap
+## EZ WakeUp
+com.acer.ezwakeup
+## DemoVideo
+com.acer.ap.DemoVideo
+## PAI
+android.autoinstalls.config.acer.acer_asgard
 
 
 # SONY
@@ -216,6 +239,12 @@ gg.now.accounts
 gg.now.ads.service
 
 
+# 聯發科相關 / MediaTek related APPs
+## EngineerMode
+com.mediatek.engineermode
+## MTK Logger
+com.mediatek.mtklogger
+
 # 其他 / Others
 ## Spotify
 com.spotify.music
@@ -230,3 +259,8 @@ com.facebook.katana
 com.facebook.system
 ### Meta App Manager
 com.facebook.appmanager
+## Games Hub
+com.dti.folderlauncher
+## AccuWeather
+com.accuweather.android
+com.accuweather.androidlite
