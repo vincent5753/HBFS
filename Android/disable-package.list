@@ -42,7 +42,10 @@ com.google.android.apps.cloudprint
 com.google.android.feedback
 ## Pixel Watch 上的 Gemini / Gemini on Pixel Watch
 com.google.android.wearable.assistant
-
+# 展示 Apps / Retail,Demo Apps
+adb shell pm disable-user --user 0 com.google.android.apps.wearable.retailattractloop
+adb shell pm disable-user --user 0 com.google.android.wearable.fitbit.retaildemo
+adb shell pm disable-user --user 0 com.google.android.wearable.diagnosticstool
 
 # xiaomi
 ## Installs shitty apps
