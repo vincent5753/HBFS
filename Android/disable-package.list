@@ -40,6 +40,8 @@ com.google.android.street
 com.google.android.apps.cloudprint
 ## Market 意見回饋代理程式 / Market Feedback Agent 
 com.google.android.feedback
+## Pixel Watch 上的 Gemini / Gemini on Pixel Watch
+com.google.android.wearable.assistant
 
 
 # xiaomi
