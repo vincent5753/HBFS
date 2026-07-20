@@ -4,6 +4,10 @@ com.android.calculator2
 # 錄音機
 com.android.soundrecorder
 
+# 區域限定 / Region Specific
+## 日本 NFC 相關 / Japanese NFC related
+com.felicanetworks.mfc
+com.felicanetworks.mfc.mfi.wear
 
 # Google
 ## Play 圖書
